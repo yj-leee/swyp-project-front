@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  console.log('This is a test commit for CI.');
+
   return (
     <div className="App">
       <header className="App-header">
