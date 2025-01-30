@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+
+echo "Running tests..."
+set -x 
+npm test
+
+echo "Starting lint-staged..."
+npx lint-staged
+set -x 
+
+echo "Commit process completed"
